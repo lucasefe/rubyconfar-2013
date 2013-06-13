@@ -1,14 +1,6 @@
-# SZ's Starter Kit
+# RC 2013 seems to be happening.
 
 
-## Usage
+## 27 y 28 de Noviembre en el Konex
   
-Clone the repo to some folder
-
-    git clone /Work/static-starter-kit Development; cd Development; rake bootstrap
-
-It's gonna ask you user, host and path of the remote server. It provides defaults. 
-
-## NOTE: After processing execute this:
-
-    cd .. && cd -
+Told ya so.
