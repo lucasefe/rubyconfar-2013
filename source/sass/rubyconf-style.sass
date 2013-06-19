@@ -19,18 +19,42 @@ body
     margin: 50px 0 0 0 
     padding-top: 200px
 
-  h2
+  h2  
     margin: 10px 0 15px
     opacity: 0.7
 
-  a
-    color: white
-    font-size: 11px
-    text-decoration: none
+  nav
+    margin-top: 30px
+
+    a
+      @include transition(all, 0.5s)
+      color: #d9d9d9
+      font-size: 14px
+      margin: 0 12px
+      text-decoration: none
+
+      i
+        @include transition(all, 0.5s)
+        color: $red
+        font-size: 18px
+        margin-right: 5px
+
+        &.icon-facebook
+          color: #2bbdb7
+
+        &.icon-twitter
+          color: #68BFEB
+
+      &:hover
+        color: white
+        i
+          color: $yellow
+
 
 
   // Avoids phone numbers from changing color in iOS.
   a[href^=tel]
     color: inherit
     text-decoration: none
+
 
