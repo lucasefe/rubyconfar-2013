@@ -16,3 +16,7 @@ task :bootstrap do
   STDOUT.puts "-----------------------------------------"
   STDOUT.puts "Your new repository is: #{remote_url}"
 end
+
+task :deploy do 
+  system "ssh rubysur@rubyconfargentina.org -C 'cd apps/www.rubyconfargentina.org/2013 && git pull'"
+end
