@@ -43,12 +43,49 @@ body
           color: #2bbdb7
 
         &.icon-twitter
-          color: #68BFEB
+          color: $blue_twitter
 
       &:hover
         color: white
         i
           color: $yellow
+
+  #speakers
+    h2
+      font-size: 20px
+      margin: 40px 0 20px
+    ul
+      li
+        margin: 0 15px 10px  
+        @include inline-block
+        img
+          @include transition(all, 0.5s)
+          border-radius: 100%
+          border: 1px solid black
+          &.highlight
+            // border-color: $blue_twitter
+            box-shadow: 0 0 1px 5px $blue_twitter
+        
+        h3
+          font-size: 15px
+          margin-bottom: 3px
+          a
+            color: white
+            text-decoration: none
+            i
+              color: $blue_twitter
+              margin-right: 5px
+
+            &:hover
+              color: $blue_twitter
+              i
+                color: white
+
+
+        h4
+          font-size: 12px
+          opacity: 0.8
+        
 
 
 
